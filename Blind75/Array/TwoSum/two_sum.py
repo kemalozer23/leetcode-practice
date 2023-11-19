@@ -10,6 +10,17 @@ class Solution:
                 return [prevMap[diff], i]
             prevMap[n] = i
         return
+        
+    def twoSumBrutForce(self, nums: list[int], target: int) -> list[int]:
+        pivot_index = 0
+        while True:
+
+            for i in range(pivot_index + 1, len(nums)):
+                total = nums[pivot_index] + nums[i]
+                if total == target:
+                    return [ pivot_index, i ]
+
+            pivot_index += 1
 
 # Example 1:
 nums1 = [2,7,11,15]
