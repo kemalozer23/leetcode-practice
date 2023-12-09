@@ -11,7 +11,7 @@ class Solution:
             prevMap[n] = i
         return
         
-    def twoSumBrutForce(self, nums: list[int], target: int) -> list[int]:
+    def twoSumBruteForce(self, nums: list[int], target: int) -> list[int]:
         pivot_index = 0
         while True:
 
